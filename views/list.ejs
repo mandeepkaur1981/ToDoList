@@ -1,0 +1,44 @@
+<%- include('header') -%>
+
+            <div class="box">
+                <h1 id="heading"><em><%= pageSelected %></em> - <%= dayOfWeek %></h1>
+            </div>
+            
+            <div class="box box-limit">
+                    <% for( let index = 0; index < newListItem.length; index++ ) { %>
+                        <form action="/remove" method="post">
+                        <div class="item">
+                            <input type="hidden" value="<%= newListItem[index]._id %>">
+                            <input type="hidden" value="<% pageSelected %>">
+                            <input type="checkbox">
+                            
+                            <p class="item-value"><%= newListItem[index].listItems %></p> 
+                            <p class="remove-item">
+                                <button class="btn-todo" type="submit" name="remove" value=<%= pageSelected + "*" + newListItem[index]._id %>>X</button>    
+                            </p>
+                        </div>
+                        
+                    </form>
+                    <% } %>
+                    <form action="/" method="post" class="submit-fix">
+                        <input id="to-focus" name="addItem" type="text" placeholder="Add to-do items" autocomplete="off">
+                        
+                        <button class="btn-todo" type="submit" name="pageSubmit" value="<%= pageSelected %>"><i class="fas fa-plus"></i></button>
+                    </form>
+                    <script>
+                        document.getElementById("to-focus").focus();
+                    </script>
+                    
+            </div>
+            <%- include('footer') -%>
+            
+      
+
+    
+
+    
+
+    
+    
+</body>
+</html>

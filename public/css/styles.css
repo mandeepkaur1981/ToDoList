@@ -1,0 +1,171 @@
+html {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(55deg, #381460 50%, #ffbd69 50%);
+  min-height: 1000px;
+  font-family: 'helvetica';
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+h2{
+  color: #fff;
+}
+.main-links{
+  background-color: transparent;
+  text-align: center;
+}
+.link-select{
+  text-decoration: none;
+  color:inherit;
+}
+.link-button{
+  width:100px;
+  height: 50px;
+  background-color: #d45079;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a.contact{
+  height: 50px;
+font-size: 20px;
+font-weight: bold;
+position: fixed;
+right: 0;
+width: 200px;
+text-align: right;
+margin-top: 20px;
+color: #d45079;
+
+}
+
+.box {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+
+#heading {
+  background-color: #A683E3;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  max-height: 500px;
+  border-bottom: 0;
+}
+
+.image{
+  width:150px;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+  width:10%;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+p.item-value{
+ width:85%;
+ text-align: left;
+}
+
+p.remove-item{
+  width:10%;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn-todo {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-width: 0;
+  top: 2px;
+  margin-top:10px;
+}
+
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 250px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.box-limit{
+  max-height: 500px;
+ overflow:auto; 
+}
+.submit-fix{
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: #ffd3b6;
+  z-index: 1;
+}
+.remove-item{
+  margin-right: 10px;
+  display: inline-block;
+  text-align: right;
+  font-weight: 600;
+  color: #A683E3;
+}
